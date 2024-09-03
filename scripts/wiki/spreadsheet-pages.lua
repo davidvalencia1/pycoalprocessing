@@ -2,6 +2,8 @@ Spreadsheet = {}
 Spreadsheet.events = {}
 
 local floor = math.floor
+local FUN = require '__pycoalprocessing__/prototypes/functions/functions'
+
 local function on_search(search_key, gui)
 	gui = gui.content
 	if not gui then return end
@@ -257,7 +259,7 @@ Spreadsheet.events.init = function()
 	for name, fluid in pairs(game.fluid_prototypes) do
 		if not fluid.hidden and not (script.active_mods['pyalternativeenergy'] and fluid.name == 'combustion-mixture1') then
 			local fuel_value
-			if fluid.fuel_value ~= 0 then fuel_value = py.format_energy(fluid.fuel_value, 'J') end
+			if fluid.fuel_value ~= 0 then fuel_value = FUN.format_energy(fluid.fuel_value, 'J') end
 
 			local voidable = '[entity=tailings-pond]'
 			local voidable_elem_tooltip
@@ -334,7 +336,7 @@ Spreadsheet.events.init = function()
 					order = item.fuel_category or ''
 				},
 				['fuel-value'] = {
-					value = py.format_energy(item.fuel_value, 'J'),
+					value = FUN.format_energy(item.fuel_value, 'J'),
 					order = item.fuel_value
 				},
 				['burnt-result'] = {
