@@ -1,8 +1,11 @@
 ---------------------------------------------------------------------------------------------------
-Version: 2.999.999
+Version: 2.2.0
 Date: ???
   Changes:
     - Fixed fawogae stock pipe connection not matching the graphics 
+    - Added 25%, 50%, 75%, and 100% base productivity to the respective tiers of the automated factory
+    - Added 0%, 50%, 100%, and 150% base productivity to the respective tiers of the fts reactor
+    - Added 0%, 50%, 100%, and 150% base productivity to the respective tiers of the ground borer
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.31
 Date: 2024-9-7

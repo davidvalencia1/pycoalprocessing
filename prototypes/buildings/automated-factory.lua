@@ -48,6 +48,11 @@ for i = 1, 4 do
         name = name,
         icon = icon,
         icon_size = icon_size,
+        effect_receiver = {
+            base_effect = {
+                productivity = i / 4
+            }
+        },
         flags = {"placeable-neutral", "player-creation"},
         minable = {mining_time = 1, result = name},
         fast_replaceable_group = "automated-factory",

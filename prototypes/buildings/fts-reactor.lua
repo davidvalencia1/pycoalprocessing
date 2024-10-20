@@ -51,6 +51,11 @@ for i = 1, 4 do
         selection_box = {{-4.5, -4.5}, {4.5, 4.5}},
         match_animation_speed_to_activity = false,
         module_slots = i,
+        effect_receiver = {
+            base_effect = {
+                productivity = (i - 1) / 2
+            }
+        },
         allowed_effects = {"consumption", "speed", "productivity", "pollution"},
         crafting_categories = {"fts-reactor"},
         crafting_speed = i,

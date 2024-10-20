@@ -39,6 +39,11 @@ for i = 1, 4 do
         name = name,
         icon = icon,
         icon_size = icon_size,
+        effect_receiver = {
+            base_effect = {
+                productivity = (i - 1) / 2
+            }
+        },
         flags = {"placeable-neutral", "player-creation"},
         minable = {mining_time = 0.5, result = name},
         fast_replaceable_group = "ground-borer",
