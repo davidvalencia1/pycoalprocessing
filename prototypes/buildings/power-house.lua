@@ -40,7 +40,7 @@ RECIPE {
     results = {
         {type = "item", name = "power-house", amount = 1}
     }
-}:add_unlock("energy-1")
+}:add_unlock("steel-processing")
 
 for i = 1, 4 do
     if not mods.pyrawores and i == 2 then return end

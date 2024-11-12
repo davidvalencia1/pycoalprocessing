@@ -13,7 +13,7 @@ RECIPE {
     results = {
         {type = "item", name = "gasturbinemk01", amount = 1}
     }
-}:add_unlock("energy-1")
+}:add_unlock("steel-proccesing")
 
 ITEM {
     type = "item",
