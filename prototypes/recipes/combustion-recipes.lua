@@ -17,7 +17,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-combustion",
     order = "a"
-}:add_unlock("energy-1")
+}:add_unlock("steel-processing")
 
 --COALSLURRY to CM1
 RECIPE {
@@ -253,3 +253,24 @@ RECIPE {
     subgroup = "py-combustion",
     order = "l"
 }:add_unlock("energy-3")
+
+-- Teylife Addons
+RECIPE {
+    type = "recipe",
+    name = "tar-combustion",
+    category = "combustion",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+        {type = "fluid", name = "tar", amount = 100},
+        {type = "fluid", name = "water",    amount = 100},
+    },
+    results = {
+        {type = "fluid", name = "combustion-mixture1", amount = 100, temperature = 575},
+        {type = "fluid", name = "steam",               amount = 100, temperature = 150, ignored_by_productivity = 100}
+    },
+    icon = "__pycoalprocessinggraphics__/graphics/icons/combustion-tar.png",
+    icon_size = 32,
+    subgroup = "py-combustion",
+    order = "a"
+}:add_unlock("steel-processing")
